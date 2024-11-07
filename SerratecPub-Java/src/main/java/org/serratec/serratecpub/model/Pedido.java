@@ -25,12 +25,15 @@ public class Pedido {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	private LocalDate dataPedido;
 	private LocalDate dataEntrega;
 	private LocalDate dataEnvio;
+	
 	@NotNull
 	@Enumerated(EnumType.STRING)
 	private StatusPedido statusPedido;
+	
 	private double valorTotal;
 	private Double valorTotalDesconto = 0.0;
 	
