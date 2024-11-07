@@ -1,0 +1,116 @@
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: calc(50vh - 200px) auto;
+  padding: 20px;
+  max-width: 50vh;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  font-weight: bold;
+  background-color: #252020;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  width: 43vh;
+  color: white;
+}
+.corpo {
+  background-image: url("https://imgur.com/DBqTkCG.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h2 {
+  padding: 5px;
+  font-size: 2vh;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 5vh;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-transform: none;
+  outline: none;
+}
+
+.buttonEntrar {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #dfa32e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.buttonEntrar:hover {
+  background-color: #f0c14b;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.divCadastro {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  font-size: 1.5vh;
+}
+.divCadastro .buttonCadastro {
+  font-size: 1.7vh;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  color: #dfa32e;
+}
+.divCadastro .buttonCadastro:hover {
+  color: #dfa32e;
+  transition: color 0.3s ease-in-out;
+}
+
+.divCadastro .buttonCadastro::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #dfa32e;
+  transition: width 0.3s ease-in-out;
+}
+
+.divCadastro .buttonCadastro:hover {
+  color: #dfa32e;
+  padding-bottom: 2px solid #dfa32e;
+  transition: color 0.3s ease-in-out, text-bottom 0.1s ease-in-out;
+}
+.divCadastro .buttonCadastro:hover::after {
+  width: 100%;
+}

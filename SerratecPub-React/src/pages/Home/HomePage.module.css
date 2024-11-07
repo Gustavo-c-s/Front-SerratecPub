@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arvo, serif;
+}
+
+.container_a {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10000000;
+}
+
+.buttons label {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  opacity: 0.5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3) {
+  opacity: 2;
+  width: 70px;
+}
+
+.content {
+  position: relative;
+  width: 300vw;
+  display: flex;
+  transition: 0.5s;
+}
+
+.content .box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  user-select: none;
+  padding: 40px;
+}
+
+.content .box:nth-child(1) {
+  background-image: url("../../assets/images/home-bar11.png");
+  background-size: cover;
+  animation: appear 1s;
+}
+.content .box:nth-child(2) {
+  background-image: url("../../assets/images/home-bar22new.png");
+  background-size: cover;
+}
+
+.content .box:nth-child(3) {
+  background-image: url("../../assets/images/home-bar33-new.png");
+  background-size: cover;
+}
+
+.tabs input:nth-child(1):checked ~ .content {
+  left: 0vw;
+}
+
+.tabs input:nth-child(2):checked ~ .content {
+  left: -100vw;
+}
+
+.tabs input:nth-child(3):checked ~ .content {
+  left: -200vw;
+}
+
+.content .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content .box .contentBx {
+  margin-left: 15%;
+}
+
+.content .box .contentBx h2 {
+  font-size: 70px;
+  color: #fff;
+  text-shadow: #4c3f5f 5px 5px 1px;
+  text-align: left;
+  text-decoration: none;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.container_b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_b img {
+  width: 30%;
+  height: 20%;
+  margin-left: 80px;
+}
+
+.container_b .container_b_about {
+  width: 30vw;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.container_b .container_b_about h2 {
+  text-decoration: none;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.container_b .container_b_about p {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container_c_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1500vw;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 25px;
+}
+
+.boxImg1,
+.boxImg2,
+.boxImg3 {
+  position: relative;
+  flex: 1;
+  min-width: 50px;
+}
+
+.boxImg1 img,
+.boxImg2 img,
+.boxImg3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  animation: appear 1s;
+  animation-timeline: scroll();
+  flex: 1 1 30%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    translate: -100vw 0;
+  }
+  to {
+    opacity: 1;
+    traslate: 0 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .container_a .container_b .container_c {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 850px) {
+ .container_b{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+  }
+}
+
+
+@media (max-width: 850px) {
+  .container_b img{
+     flex-direction: column;
+     align-items: center;
+     width: 50%;   
+     margin-top: 15px; 
+   }
+ }
+
+ @media (max-width: 850px) {
+  .container_b .container_b_about {
+  margin-left: 0%;
+  margin-right: 0%;
+  font-size: 10px; 
+  padding:0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container_b .container_b_about p{
+  font-size: 10px; 
+  
+  }
+}
+@media (max-width:850px) {
+  .container_b .container_b_about h2{
+  font-size: 15px; 
+  }
+}
+
+
+@media (max-width: 850px) {
+  .container_c_box{
+  flex-direction: column;
+  padding: 80px;
+  gap:55px;
+
+}
+}
+
+@media (max-width: 850px){
+  .content .box .contentBx h2{
+    font-size: 50px;
+  }
+}

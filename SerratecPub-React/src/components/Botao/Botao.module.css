@@ -1,0 +1,16 @@
+.bnt{
+    font-family: Arvo, serif;
+    text-transform: uppercase;
+    font-family: Arvo, serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1vh;
+    background-color: #dfa32e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #b58521;
+    transition: background-color 0.3s ease-in-out;
+}

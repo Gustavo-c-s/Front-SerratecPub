@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .FotoMembro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px;
+  margin-left: 10%;
+} */
+
+/* .Membro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+} */
+
+/* .Membro img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Membro img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+} */
+
+/* .Descricao {
+  font-size: 1rem;
+  color: #555;
+  font-size: larger;
+  font-family: Arvo, serif;
+  font-weight: bold;
+} */
+/* .githubIcon {
+  color: #333;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.githubIcon:hover {
+  color: #000;
+} */
+
+/* Responsividade
+@media (max-width: 768px) {
+  .FotoMembro {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .Membro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Descricao {
+    margin-top: 10px;
+  }
+
+  .Membro img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Membro img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Descricao {
+    font-size: medium;
+  }
+} */

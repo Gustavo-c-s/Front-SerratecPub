@@ -1,0 +1,20 @@
+header {
+  font-family: Arvo, serif;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-family: Arvo, serif !important;
+}
+.link::after {
+  content: "";
+  background: #dfa32e;
+}
+
+.link:hover {
+  color: #dfa32e;
+}

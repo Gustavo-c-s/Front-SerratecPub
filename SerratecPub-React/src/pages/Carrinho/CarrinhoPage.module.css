@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+.corpocar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    height: 100%;
+}
+footer{
+    opacity: 0%;
+}
+
+.box{
+    margin-top: 10px;
+    gap: 5rem;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    justify-items: center;
+    width: 70vh;
+    height: auto;
+    padding: 10px;
+    line-height: 2;
+}
+.box .nome{
+    font-size: 2vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carrinhoVazio{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.bnt{
+    display: flex;
+    background-color: #dfa32e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 15px;
+    align-items: center;
+    height: 50px;
+    margin: 15px;
+}
+.btn:hover{
+    background-color: #b58521;
+}
+
+.finalizar{
+    margin: 10px 0 10px 0;
+    font-size: 5vh;
+    color: #dfa32e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.finalizar:hover{
+    color: #b58521;
+    transition: background-color 0.3s ease-in-out;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

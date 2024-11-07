@@ -1,0 +1,130 @@
+.cadastroPage {
+  background-image: url("https://imgur.com/DBqTkCG.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.cadastroWrapper {
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  font-weight: bold;
+  max-width: 70vh;
+  margin: calc(50vh - 50vh) auto;
+  padding: 20px;
+  display: block;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #252020;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.cadastroWrapper .h2 {
+  text-align: center;
+}
+
+.divInput {
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  width: 100%;
+  margin-bottom: 5vh;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+
+.divInput texto {
+  text-transform: lowercase;
+}
+
+.divTermos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.divTermos input {
+  align-items: center;
+  margin-right: 1vh;
+  padding: 0;
+  margin: 0;
+  transform: scale(1.2);
+  margin-top: -1vh;
+  width: 10%;
+}
+
+.divTermos input::placeholder {
+  color: black;
+}
+
+.divTermos p {
+  font-size: 1.7vh;
+  display: inline;
+  font-family: Arvo, serif;
+}
+.divTermos input {
+  width: 10px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+.divTermos .buttonTermos {
+  color: #dfa32e;
+  font-size: 1.7vh;
+  margin-top: -1vh;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  border: none;
+  background: none;
+  border-radius: 5px;
+}
+.divTermos .buttonTermos:hover {
+  color: #f0c14b;
+  transition: color 0.3s ease-in-out;
+}
+
+.divTermos .buttonTermos::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #dfa32e;
+  transition: width 0.3s ease-in-out;
+}
+
+.divTermos .buttonTermos:hover {
+  color: #f0c14b;
+  padding-bottom: 2px solid #dfa32e;
+  transition: color 0.3s ease-in-out, text-bottom 0.1s ease-in-out;
+}
+.divTermos .buttonTermos:hover::after {
+  width: 100%;
+}
+
+.buttonCadastrar {
+  margin-top: 3vh;
+  text-transform: uppercase;
+  font-family: Arvo, serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #dfa32e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.buttonCadastrar:hover {
+  background-color: #f0c14b;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .cadastroPage {
+    padding: 30px 30px;
+  }
+}

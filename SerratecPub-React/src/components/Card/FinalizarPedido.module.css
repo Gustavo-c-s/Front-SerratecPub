@@ -1,0 +1,39 @@
+.corpo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bnt{
+    font-size: 3vh;
+    font-family: Arvo, serif;
+    text-transform: uppercase;
+    font-family: Arvo, serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1vh;
+    background-color: #dfa32e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+.btn:hover {
+    background-color: #b58521;
+    transition: background-color 0.3s ease-in-out;
+}
+.bntLimpar{
+  margin: 2vh 0vh 2vh 0vh;
+  font-size: 2vh;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
