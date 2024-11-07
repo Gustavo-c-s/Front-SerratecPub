@@ -1,5 +1,6 @@
 
 # SERRATEC PUB
+![Imagem de logo do SerratecPub](https://github.com/thiagobranconf/Front-SerratecPub/blob/main/SerratecPub.JPG)
 
 Projeto final da disciplina **Desenvolvimento Web** (React) do programa de Residência Full Stack do Serratec 2024.2. O objetivo é criar o desenvolvimento web de um ecommerce fictício integrando com a API.
 
