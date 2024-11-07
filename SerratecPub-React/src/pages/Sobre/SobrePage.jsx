@@ -84,27 +84,6 @@ export function SobrePage() {
       </Membro>
       <Membro>
         <a
-          href="https://www.linkedin.com/in/eduarda"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ImagemMembro src={eduardaFt} alt="Eduarda" />
-        </a>
-        <Descricao>
-          <Nome>Eduarda Goulart</Nome>
-          <br />
-          Especialista em DevOps e Rodadas de Chopp
-          <a
-            href="https://github.com/Eduarda-goular"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GithubIcon icon={faGithub} />
-          </a>
-        </Descricao>
-      </Membro>
-      <Membro>
-        <a
           href="https://www.linkedin.com/in/isabellaoliveira-pinheiro/"
           target="_blank"
           rel="noopener noreferrer"
