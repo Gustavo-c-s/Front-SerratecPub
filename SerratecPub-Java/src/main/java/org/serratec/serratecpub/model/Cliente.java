@@ -2,6 +2,7 @@ package org.serratec.serratecpub.model;
 
 import java.time.LocalDate;
 
+import org.hibernate.validator.constraints.br.CPF;
 import org.serratec.serratecpub.util.TratamentoDeErro;
 
 import jakarta.persistence.CascadeType;
@@ -25,17 +26,16 @@ public class Cliente {
 	@NotBlank(message = TratamentoDeErro.NotBlankMessage)
 	private String nome;
 	
-//	@Email
+	@Email
 	@NotBlank(message = TratamentoDeErro.NotBlankMessage)
 	@Size(min = 5, max = 100)
 	private String email;
 	
-	//@CPF
+	@CPF
 	@NotBlank(message = TratamentoDeErro.NotBlankMessage)
 	private String cpf;
 	
 	@NotBlank(message = TratamentoDeErro.NotBlankMessage) 
-//	@Size(min=11,max=11, message="Telefone deve conter entre 10 e 11 digitos")
 	private String telefone;
 	
 	@PastOrPresent(message = "A data de nascimento deve ser informada no passado ou presente no formato AAAA-MM-DD")
